@@ -5,13 +5,10 @@ public class Animals {
     Double weight;
     String name;
 
-    public Animals(String dog, double v, String krzyś) {
-    }
-
-    void Animals(String gatunek, double waga, String nazwa) {
-        species = gatunek;
+    public Animals(String nazwa, double waga, String imie) {
+        species = nazwa;
         weight = waga;
-        name = nazwa;
+        name = imie;
     }
 
     void write() {
