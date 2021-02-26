@@ -12,7 +12,7 @@ public class Animal {
     }
 
     void write() {
-        System.out.println("Nazwa: " + name + " Waga " + weight);
+        System.out.println("Gatunek: " + species + " Nazwa: " + name + " Waga " + weight);
     }
 
     void feed() {
