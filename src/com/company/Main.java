@@ -11,5 +11,8 @@ public class Main {
         dog.write();
         Animal horse = new Animal("mustang", 200, "rafał");
         horse.write();
+
+        Human Kacper = new Human("Kacper", "Piątek", "987654231", dog);
+        Kacper.write();
     }
 }
