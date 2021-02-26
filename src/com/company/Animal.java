@@ -1,14 +1,14 @@
 package com.company;
 
-public class Animals {
+public class Animal {
     String species;
     Double weight;
     String name;
 
-    public Animals(String nazwa, double waga, String imie) {
-        species = nazwa;
-        weight = waga;
-        name = imie;
+    public Animal(String species, double weight, String name) {
+        this.species = species;
+        this.weight = weight;
+        this.name = name;
     }
 
     void write() {
