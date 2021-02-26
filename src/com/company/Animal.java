@@ -1,9 +1,12 @@
 package com.company;
 
+import java.io.File;
+
 public class Animal {
-    String species;
-    Double weight;
-    String name;
+    final String species;
+    public String name;
+    public File pic;
+    private Double weight;
 
     public Animal(String species, double weight, String name) {
         this.species = species;

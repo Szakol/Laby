@@ -1,10 +1,10 @@
 package com.company;
 
 public class Human {
-    String firstName;
-    String lastName;
-    String phone;
-    Animal pet;
+    public String firstName;
+    public String lastName;
+    public Animal pet;
+    protected String phone;
 
     public Human(String firstName, String lastName, String phone, Animal pet) {
         this.firstName = firstName;
