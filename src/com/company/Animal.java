@@ -1,24 +1,51 @@
 package com.company;
 
-import java.io.File;
-
 public class Animal {
-    final String species;
-    public String name;
-    public File pic;
+    final private String species;
     private Double weight;
+    //***************************************************
+    private final Double DEFOULT_ANIMAL_WEIGHT = 1.0;
+    private final Double DEFOULT_DOG_WEIGHT = 7.0;
+    private final Double DEFOULT_CAT_WEIGHT = 3.0;
+    private final Double DEFOULT_COW_WEIGHT = 500.0;
+    //***************************************************
 
-    public Animal(String species, double weight, String name) {
+    public Animal(String species) {
         this.species = species;
-        this.weight = weight;
-        this.name = name;
+        switch (species) {
+            case "dog":
+                weight = DEFOULT_DOG_WEIGHT;
+                break;
+            case "cat":
+                weight = DEFOULT_CAT_WEIGHT;
+                break;
+            case "cow":
+                weight = DEFOULT_COW_WEIGHT;
+                break;
+            default:
+                weight = DEFOULT_ANIMAL_WEIGHT;
+                break;
+        }
     }
 
-    void write() {
-        System.out.println("Gatunek: " + species + " Nazwa: " + name + " Waga " + weight);
+    //***************************************************
+    //FUNKCJE
+    void takeForAWalk() {
+        if (weight > 0) {
+            weight -= 1.0;
+            System.out.println("I'm losing weight");
+        } else if (weight <= 0) {
+            System.out.println("Dude im dead");
+        }
     }
 
     void feed() {
-        weight += 1;
+        if (weight > 0) {
+            weight += 1.0;
+            System.out.println("Was good, thx for food!");
+        } else if (weight <= 0) {
+            System.out.println("Dude im dead");
+        }
     }
+    //***************************************************
 }

@@ -3,16 +3,20 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        Animal dog = new Animal("dog", 20.5, "Krzyś");
-        dog.write();
+        Human Kacper = new Human("Kacper", "Piątek", "987654231");
+        Animal dog = new Animal("dog");
         dog.feed();
-        dog.feed();
-        dog.feed();
-        dog.write();
-        Animal horse = new Animal("mustang", 200, "rafał");
-        horse.write();
+        dog.takeForAWalk();
+        dog.takeForAWalk();
+        dog.takeForAWalk();
+        dog.takeForAWalk();
+        dog.takeForAWalk();
+        dog.takeForAWalk();
+        dog.takeForAWalk();
+        dog.takeForAWalk();
+        dog.takeForAWalk();
 
-        Human Kacper = new Human("Kacper", "Piątek", "987654231", dog);
-        Kacper.write();
+        Kacper.auto = new Car("red", "BMW", "ktoś");
+
     }
 }
